@@ -56,6 +56,7 @@ CORS(
         "http://localhost:3000",
         "https://xqai-encoder.reify.ing",
         "https://q-encoder-vis.vercel.app",
+        "https://xqai-eyes.vercel.app",
     ],
 )
 
