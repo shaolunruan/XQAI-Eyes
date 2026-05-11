@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import ModuleDraw2dplot from "../Functions/module_draw_2dplot";
 
 function OriginalDataView(props) {
@@ -6,14 +7,23 @@ function OriginalDataView(props) {
 	const left = props.left;
 	const top = props.top;
 	const { class_color } = props;
-	const features = props.features || [];
-	const labels = props.labels || [];
 	const selectedIndex = props.selectedIndex;
 	const onHoverIndex = props.onHoverIndex;
 
 	// 定义新的measure
 	const svg_width = width * 0.9;
 	const svg_height = height * 0.9;
+
+	const dataset = useMemo(
+		() => ({
+			feature: props.features || [],
+			label: props.labels || [],
+		}),
+		[props.features, props.labels],
+	);
+
+	const features = dataset.feature;
+	const labels = dataset.label;
 
 	const hasData =
 		Array.isArray(features) &&
@@ -42,7 +52,7 @@ function OriginalDataView(props) {
 			>
 				{hasData ? (
 					<ModuleDraw2dplot
-						dataset={{ feature: features, label: labels }}
+						dataset={dataset}
 						class_color={class_color}
 						boundary={null}
 						mode={"medium"}

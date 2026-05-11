@@ -425,9 +425,8 @@ function App() {
 		await cleanupStream(true);
 	};
 
-	// Fast updates for circuit preview and encoded data when dataset or encoder changes
+	// Update circuit preview when encoder or dataset changes
 	useEffect(() => {
-		// Build circuit preview from encoders list and current dataset (for qubit/ansatz if available)
 		if (
 			selectedEncoder &&
 			encoders &&
@@ -447,8 +446,11 @@ function App() {
 		} else {
 			setCircuitPreview(null);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [selectedEncoder, encoders]);
 
-		// Fetch encoded data quickly for the selected dataset and encoder
+	// Fetch encoded data when dataset selection or encoder changes
+	useEffect(() => {
 		const circuit_id = DATA_PORT_MAP[data_name];
 		if (!selectedEncoder) {
 			setAllData(null);
@@ -496,7 +498,7 @@ function App() {
 		return () => {
 			source.cancel("Route changed");
 		};
-	}, [data_name, selectedEncoder, encoders, dataset]);
+	}, [data_name, selectedEncoder, encoders]);
 
 	return (
 		<Layout

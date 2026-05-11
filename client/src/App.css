@@ -1,291 +1,291 @@
 .header {
-	height: auto;
-	color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	position: relative;
+  height: auto;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .header h1 {
-	width: 600px;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	line-height: 1.45em;
-	font-weight: 300;
-	color: rgba(255, 255, 255, 0.7);
-	margin-left: auto; /* 水平居中 */
-	margin-right: auto; /* 水平居中 */
-	font-family: "Helvetica", "Arial", sans-serif;
-	font-size: 2em;
+  width: 900px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 1.45em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: auto; /* 水平居中 */
+  margin-right: auto; /* 水平居中 */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 2em;
 }
 
 .container-for-centered {
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .centered {
-	display: flex;
-	justify-content: space-between;
-	position: relative; /* 水平居中 */
-	margin-left: auto; /* 水平居中 */
-	margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* 水平居中 */
+  margin-left: auto; /* 水平居中 */
+  margin-right: auto;
 }
 
 #vis_system {
-	position: relative; /* 水平居中 */
-	margin-left: auto; /* 水平居中 */
-	margin-right: auto;
+  position: relative; /* 水平居中 */
+  margin-left: auto; /* 水平居中 */
+  margin-right: auto;
 }
 
 .button-group {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .control_font {
-	color: #111111;
-	font-size: 15px;
-	display: block;
-	font-weight: 300;
+  color: #111111;
+  font-size: 15px;
+  display: block;
+  font-weight: 300;
 }
 
 /***** for Antd slider style change*****/
 .ant-slider .ant-slider-handle::after {
-	box-shadow: 0 0 0 2px #113354;
+  box-shadow: 0 0 0 2px #113354;
 }
 
 .ant-slider .ant-slider-track {
-	background-color: #797979;
-	border-radius: 2px;
-	height: 2px;
+  background-color: #797979;
+  border-radius: 2px;
+  height: 2px;
 }
 
 .ant-slider-horizontal .ant-slider-rail {
-	height: 2px;
+  height: 2px;
 }
 
 .ant-slider .ant-slider-handle::after {
-	width: 7px;
-	height: 7px;
+  width: 7px;
+  height: 7px;
 }
 
 .ant-select-arrow {
-	visibility: hidden;
+  visibility: hidden;
 }
 /***** for Antd slider style change*****/
 
 .drawer_button_group {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	border-top: 1px solid #e8e8e8;
-	padding: 10px 16px;
-	text-align: "right";
-	left: 0;
-	background: #fff;
-	border-radius: 0 0 4px 4px;
-	display: inline;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: "right";
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  display: inline;
 }
 
 .play-button:after {
-	content: "";
-	display: block;
-	position: absolute;
-	border-radius: 2em;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-	box-shadow: 0 0 10px 32px #727272;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 32px #727272;
 }
 
 .play-button:active:after {
-	box-shadow: 0 0 0 0 #737373;
-	position: absolute;
-	border-radius: 2em;
-	left: 0;
-	top: 0;
-	opacity: 1;
-	transition: 0s;
+  box-shadow: 0 0 0 0 #737373;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .play-button:active {
-	top: 1px;
+  top: 1px;
 }
 
 article {
-	background: white;
-	padding: 60px 0;
-	box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 60px 0;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
 }
 
 .article-body {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article h2 {
-	margin: 60px 0 20px 0;
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 1.45em;
-	color: rgba(0, 0, 0, 0.7);
+  margin: 60px 0 20px 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.45em;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 article p {
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	unicode-bidi: isolate;
-	font-family:
-		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-		Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-		"Segoe UI Symbol", "Noto Color Emoji";
-	font-size: 1.3em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.3em;
 }
 
 footer {
-	border-top: solid 1px #eee;
-	color: #ccc;
-	font-weight: 300;
-	padding: 40px 0;
-	height: 30px;
+  border-top: solid 1px #eee;
+  color: #ccc;
+  font-weight: 300;
+  padding: 40px 0;
+  height: 30px;
 }
 
 .centered-footer {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar-group {
-	width: 400px;
+  width: 400px;
 }
 
 .ant-avatar {
-	margin-inline-end: 3px;
+  margin-inline-end: 3px;
 }
 
 .avatar-contributor-text {
-	font-size: 12px;
-	opacity: 1;
-	margin-bottom: 8px;
+  font-size: 12px;
+  opacity: 1;
+  margin-bottom: 8px;
 }
 
 .comp_title {
-	font-weight: 400;
-	font-size: 16px;
-	text-transform: uppercase;
-	line-height: 1.3em;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.3em;
 }
 
 .original-data-view .axis path {
-	fill: none;
-	stroke: none;
+  fill: none;
+  stroke: none;
 }
 
 .original-data-view .axis .tick line {
-	display: none;
+  display: none;
 }
 
 .component {
-	position: absolute;
+  position: absolute;
 }
 
 /* Ensure card previews do not get their text overlapped by absolutely-positioned components */
 .ant-card-body .quantum-circuit {
-	position: relative;
+  position: relative;
 }
 
 /* Make Drawer content scroll if it overflows and add comfortable spacing */
 .ant-drawer-body {
-	overflow: auto;
+  overflow: auto;
 }
 
 .data-option {
-	margin: 20px;
+  margin: 20px;
 }
 
 .data-option-unselected {
-	opacity: 0.25;
-	border: 2px solid rgba(143, 143, 143, 0.1);
-	border-radius: 3px;
-	cursor: pointer;
+  opacity: 0.25;
+  border: 2px solid rgba(143, 143, 143, 0.1);
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .data-option-unselected:hover {
-	opacity: 0.55;
+  opacity: 0.55;
 }
 
 .data-option-selected {
-	opacity: 1;
+  opacity: 1;
 }
 
 .data-option-border {
-	fill: none;
-	stroke: #1c1c1c;
+  fill: none;
+  stroke: #1c1c1c;
 }
 
 .encoder-step-border {
-	fill: none;
-	stroke: #1c1c1c;
+  fill: none;
+  stroke: #1c1c1c;
 }
 
 .encoder-step-sub-border {
-	fill: none;
-	stroke: #1c1c1c;
+  fill: none;
+  stroke: #1c1c1c;
 }
 
 .encoder-step-sub-sub-border {
-	fill: none;
-	stroke: #1c1c1c;
+  fill: none;
+  stroke: #1c1c1c;
 }
 
 .spin-original-data-view {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 1000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
 }
 
 .loading-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgb(248, 248, 248); /* Semi-transparent black background */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(248, 248, 248); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .circuit-wire {
-	/*stroke-dasharray: 5;*/
+  /*stroke-dasharray: 5;*/
 }
 
 .boundary-line {
-	fill: none;
-	stroke: #ffffff;
-	stroke-width: 4;
-	stroke-dasharray: 6, 4;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-dasharray: 6, 4;
 }
 
 .acc_line {
-	fill: none;
+  fill: none;
 }
 
 .loss_line {
-	fill: none;
+  fill: none;
 }
 
 .light-text {
-	font-family: "Helvetica", "Arial", sans-serif;
-	fill: #656565;
-	font-weight: 300;
+  font-family: "Helvetica", "Arial", sans-serif;
+  fill: #656565;
+  font-weight: 300;
 }
